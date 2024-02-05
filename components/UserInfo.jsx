@@ -24,29 +24,6 @@ export default function UserInfo(){
   const [PendingCount, setPendingCount] = useState(null);
   const [CompletedCount, setCompletedCount] = useState(null);
   
-  useEffect(() => {
-
-    const fetchProblemCount = async () => {
-      try{
-        const response = await axios.get('/api/ProblemCount',{
-          params:{email:session?.user?.email},
-        });
-        console.log(response.data);
-        setProblemCount(response.data.count);
-        
-
-      }
-      catch(error){
-        console.log(error);
-        console.error('Error fetching problem count:' ,error.message);
-
-      }
-
-    };
-    fetchProblemCount();
-  },[session]);
-  
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     

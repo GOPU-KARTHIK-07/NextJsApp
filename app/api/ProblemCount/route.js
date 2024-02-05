@@ -7,17 +7,13 @@ export async function GET(req) {
     
     await connectMongoDB();
 
-    const { email } = req.query || {};
+    const data = UserProb.find({});
 
     
-    const count = await UserProb.countDocuments({ email });
-
     
-    console.log(`Count for email ${email}: ${count}`);
-
 
    
-    return new NextResponse.json({ count }, { status: 200 });
+    return new NextResponse.json({ data }, { status: 200 });
   } catch (error) {
     console.error("Error in GET request:", error);
    
