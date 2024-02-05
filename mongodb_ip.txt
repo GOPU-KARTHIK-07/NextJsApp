@@ -1,0 +1,30 @@
+Gmvak78925!@
+49.205.101.90
+
+
+super key = 23456!@#$%^
+
+
+
+// import Link from "next/link";
+// export default function AdminLoginForm(){
+//     return <div className="grid place-content-center h-screen">
+//         <div className="shadow-lg p-5 rounded-lg border-t-4 border-blue-500 ">
+//             <h1 className="text-xl font-bold my-4 text-center ">ADMIN FORM</h1>
+            
+//             <form className="flex flex-col  gap-4">
+               
+//                 <input type="text" placeholder="SUPER KEY" />
+//                 <div className="flex items-center justify-center h-full">
+//                 <button className="bg-blue-700 text-white rounded-md px-4 py-2 w-50 h-90">Enter</button>
+//                 </div>
+//                 <Link  className="text-sm text-right " href={"/"}>
+//                 Have an account?
+//                 <span className="underline text-blue-500 ">Login</span> 
+               
+//                </Link>
+
+//             </form>
+//         </div>
+//        </div>;
+// }

@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input {
+  @apply w-[400px] border border-gray-200 py-2 px-6 bg-zinc-100/40;
+}
+
+input:focus {
+  @apply outline-none border-zinc-100/60;
+}
+
+button {
+  @apply inline-block px-4 py-2 border border-gray-300 rounded transition duration-300 ease-in-out transform hover:shadow-md active:shadow-lg active:translate-y-1 active:bg-gray-200;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+.animate-shake {
+  animation: shake 0.5s ease-in-out forwards;
+}
